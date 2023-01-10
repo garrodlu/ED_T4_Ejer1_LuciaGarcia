@@ -11,13 +11,20 @@ package ed_t4_ejer1;
 public class Votacion {
     private String nombre;
     private Integer votos;
+    private Integer edad;
 
-    public Votacion() {
-    }
-
-    public Votacion(String nombre, Integer votos) {
+    public Votacion(String nombre, Integer votos, Integer edad) {
         this.nombre = nombre;
         this.votos = votos;
+        this.edad = edad;
+    }
+
+    public Integer getEdad() {
+        return edad;
+    }
+
+    public void setEdad(Integer edad) {
+        this.edad = edad;
     }
 
     public String getNombre() {
